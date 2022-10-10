@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function Nav(props) {
   const connectWallet = async () => {
@@ -18,7 +18,6 @@ export default function Nav(props) {
   };
 
   useEffect(() => {
-    console.log(props);
     async function checkWallet() {
       if (props.wallet) {
         props.accountFunc();
